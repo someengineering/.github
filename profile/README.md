@@ -1,7 +1,7 @@
 ## Welcome to FIX by Some Engineering Inc. 👋
 
 <p align="center">
-  <img src="https://cdn.some.engineering/assets/fix-logos/fix-logo.svg" alt="FIX Logo" width="300" height="300">
+  <img src="https://cdn.some.engineering/assets/fix-logos/fix-logo.svg" alt="FIX Logo" width="200" height="200">
 </p>
 
 
