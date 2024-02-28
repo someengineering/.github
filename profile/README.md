@@ -1,4 +1,4 @@
-## Welcome to FIX by Some Engineering Inc. 👋
+## Welcome to Fix by Some Engineering Inc. 👋
 
 <p align="center">
   <img src="https://cdn.some.engineering/assets/fix-logos/fix-logo.svg" alt="FIX Logo" width="200" height="200">
@@ -9,13 +9,23 @@
 At [Some Engineering Inc.](https://some.engineering), our expertise lies in pioneering cloud security and infrastructure management solutions. We are dedicated to transforming the complexity of cloud environments into streamlined, user-friendly systems. Our goal is to empower businesses of various scales to manage and secure their cloud infrastructure with ease and efficiency.
 
 
-### Our Product 🚀
-- **[FIX](https://fix.security)**: Our latest offering in the Cloud Security Posture Management (CSPM) space. FIX is designed to help organizations secure their cloud infrastructure efficiently. It comprises of these components:
+### Our Projects 🚀
+- **[Fix Inventory](https://inventory.fix.security)**: Our established self-hosted cloud inventory tool, powering our SaaS offerings with reliability and flexibility. 🛠️ Fix Inventory is the backbone, facilitating resource management and optimization.
+  - [`fixinventory`](https://github.com/someengineering/fixinventory):
+    - [`fixcore`](https://github.com/someengineering/fixinventory/tree/main/fixcore): The Fix graph platform core. Receives infrastructure data from the worker(s), runs workflows and infrastructure apps and provides and API.
+    - [`fixworker`](https://github.com/someengineering/fixinventory/tree/main/fixworker): Runs collector plugins and sends the result to fixcore.
+    - [`fixshell`](https://github.com/someengineering/fixinventory/tree/main/fixshell): CLI to interact with Fix Inventory.
+    - [`fixmetrics`](https://github.com/someengineering/fixinventory/tree/main/fixmetrics): Fix Inventory Prometheus metrics exporter.
+  - [`fixinventoryclient`](https://github.com/someengineering/fixinventoryclient-python): Python SDK for accessing Fix Inventory. Used by `fixshell`.
+  - [`fixinventory-apps`](https://github.com/someengineering/fixinventory-apps): A collection of Fix Inventory infrastructure apps. Used by `fixcore` to dynamically react to changes in your infrastructure.
+  - [`fixinventoryappbundler`](https://github.com/someengineering/fixinventoryappbundler): A bundler that takes a collection of infrastructure app sources and bundles them into a single json for `fixcore` to consume. Also allows to dry-run apps during development.
+  - [`fixdatalink`](https://github.com/someengineering/fixdatalink): Data Pipelines for Fix Inventory infrastructure data. Used by `fixcore` to export inventory data to PostgreSQL, MySQL/MariaDB, Snowflake, etc.
+- **[Fix](https://fix.security)**: Our latest SaaS offering in the Cloud Security Posture Management (CSPM) space. Build on Fix Inventory, Fix is designed to help organizations secure their cloud infrastructure efficiently. It comprises of these components:
   - [`fixinventory`](https://github.com/someengineering/fixinventory): Our established self-hosted cloud inventory tool, powering our SaaS offerings with reliability and flexibility. 🛠️ Fix Inventory is the backbone, facilitating resource management and optimization.
-  - [`fixfrontend`](https://github.com/someengineering/fixfrontend): The FIX user interface for managing and monitoring your cloud security posture.
-  - [`fixbackend`](https://github.com/someengineering/fixbackend): The backend that powers the FIX platform.
-  - [`fix-cf`](https://github.com/someengineering/fix-cf): The sources for the AWS CloudFormation stack that FIX deploys.
-  - [`fixcloudutils`](https://github.com/someengineering/fixcloudutils): Various utilities used in FIX.
+  - [`fixfrontend`](https://github.com/someengineering/fixfrontend): The Fix user interface for managing and monitoring your cloud security posture.
+  - [`fixbackend`](https://github.com/someengineering/fixbackend): The backend that powers the Fix platform.
+  - [`fix-cf`](https://github.com/someengineering/fix-cf): The sources for the AWS CloudFormation stack that Fix deploys.
+  - [`fixcloudutils`](https://github.com/someengineering/fixcloudutils): Various utilities used in Fix.
 
 
 ### Open Source Commitment 💖
