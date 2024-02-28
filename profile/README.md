@@ -18,7 +18,7 @@ At [Some Engineering Inc.](https://some.engineering), our expertise lies in pion
 - **[Fix Inventory](https://inventory.fix.security)**: Our established self-hosted cloud inventory tool, powering our SaaS offerings with reliability and flexibility. 🛠️ Fix Inventory is the backbone, facilitating resource management and optimization. It comprises of these components:
   - [`fixinventory`](https://github.com/someengineering/fixinventory):
     - [`fixcore`](https://github.com/someengineering/fixinventory/tree/main/fixcore): The Fix graph platform core. Receives infrastructure data from the worker(s), runs workflows and infrastructure apps and provides and API.
-    - [`fixworker`](https://github.com/someengineering/fixinventory/tree/main/fixworker): Runs collector plugins and sends the result to fixcore.
+    - [`fixworker`](https://github.com/someengineering/fixinventory/tree/main/fixworker): Runs [collector plugins](https://github.com/someengineering/fixinventory/tree/main/plugins) and sends the result to fixcore.
     - [`fixshell`](https://github.com/someengineering/fixinventory/tree/main/fixshell): CLI to interact with Fix Inventory.
     - [`fixmetrics`](https://github.com/someengineering/fixinventory/tree/main/fixmetrics): Fix Inventory Prometheus metrics exporter.
   - [`fixinventoryclient`](https://github.com/someengineering/fixinventoryclient-python): Python SDK for accessing Fix Inventory. Used by `fixshell`.
