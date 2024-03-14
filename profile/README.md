@@ -21,6 +21,7 @@ At [Some Engineering Inc.](https://some.engineering), our expertise lies in pion
     - [`fixworker`](https://github.com/someengineering/fixinventory/tree/main/fixworker): Runs [collector plugins](https://github.com/someengineering/fixinventory/tree/main/plugins) and sends the result to fixcore.
     - [`fixshell`](https://github.com/someengineering/fixinventory/tree/main/fixshell): CLI to interact with Fix Inventory.
     - [`fixmetrics`](https://github.com/someengineering/fixinventory/tree/main/fixmetrics): Fix Inventory Prometheus metrics exporter.
+  - [`fixcompliance`](https://github.com/someengineering/fixcompliance): Our compliance benchmarks and checks. Used by `fixcore` to find vulnerable cloud resources.
   - [`fixinventoryclient`](https://github.com/someengineering/fixinventoryclient-python): Python SDK for accessing Fix Inventory. Used by `fixshell`.
   - [`fixinventory-apps`](https://github.com/someengineering/fixinventory-apps): A collection of Fix Inventory infrastructure apps. Used by `fixcore` to dynamically react to changes in your infrastructure.
   - [`fixinventoryappbundler`](https://github.com/someengineering/fixinventoryappbundler): A bundler that takes a collection of infrastructure app sources and bundles them into a single json for `fixcore` to consume. Also allows to dry-run apps during development.
