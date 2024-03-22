@@ -13,6 +13,7 @@ At [Some Engineering Inc.](https://some.engineering), our expertise lies in pion
 - **[Fix](https://fix.security)**: Our latest SaaS offering in the Cloud Security Posture Management (CSPM) space. Build on Fix Inventory, Fix is designed to help organizations secure their cloud infrastructure efficiently. It comprises of these components:
   - [`fixfrontend`](https://github.com/someengineering/fixfrontend): The Fix user interface for managing and monitoring your cloud security posture.
   - [`fixbackend`](https://github.com/someengineering/fixbackend): The backend that powers the Fix platform.
+  - [`fixctl`](https://github.com/someengineering/fixctl): The Fix CLI tool for integrating Fix data into your pipelines.
   - [`fix-cf`](https://github.com/someengineering/fix-cf): The sources for the AWS CloudFormation stack that Fix deploys.
   - [`fixcloudutils`](https://github.com/someengineering/fixcloudutils): Various utilities used in Fix.
 - **[Fix Inventory](https://inventory.fix.security)**: Our established self-hosted cloud inventory tool, powering our SaaS offerings with reliability and flexibility. 🛠️ Fix Inventory is the backbone, facilitating resource management and optimization. It comprises of these components:
