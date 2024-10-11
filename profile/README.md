@@ -14,7 +14,7 @@ Fix Inventory works for AWS, Microsoft Azure, Google Cloud, DigitalOcean, Hetzne
 Fix Inventory simplifies keeping your cloud(s) secure and compliant, with three core capabilities: 
 
 1. **Agentless scanning** with our [cloud collector plugins](https://github.com/someengineering/fixinventory/tree/main/plugins) for a complete and and continuous assessment of your cloud(s) without impacting workload performance. 
-2. **Normalization across clouds** with our [unified data model](https://inventory.fix.security/reference/unified-data-model) and abstractions for common cloud resources called ”. Think ‘database’, ‘bucket’ or ‘keypair’.
+2. **Normalization across clouds** with our [unified data model](https://inventory.fix.security/reference/unified-data-model) and abstractions for common cloud resources called ['base kinds'](https://inventory.fix.security/reference/unified-data-model/base-kinds). Think ‘database’, ‘bucket’ or ‘keypair’.
 3. **Risk analysis** with our query language, full-text search and [pre-configured compliance frameworks](https://github.com/someengineering/fixcompliance) to scan your entire fleet. 
 
 We’ve packaged all capabilities into a CLI and a REST API, so that you can integrate data from Fix Inventory with the rest of your cloud and security operations. We always envisioned Fix Inventory as a platform that others can build on. 
