@@ -1,40 +1,52 @@
-## Welcome to Fix by Some Engineering Inc. 👋
+## 👋 Hello open source enthusiasts! 
 
 <p align="center">
   <img src="https://cdn.some.engineering/assets/fix-logos/fix-logo.svg" alt="FIX Logo" width="200" height="200">
 </p>
 
+## 💝 Check out Fix Inventory, our open source project 
+[**Fix Inventory**](https://github.com/someengineering/fixinventory) 🐑 is an open source cloud security tool that offers comprehensive visibility and control over your cloud-native environment. 
 
-### Who We Are 🌟
-At [Some Engineering Inc.](https://some.engineering), our expertise lies in pioneering cloud security and infrastructure management solutions. We are dedicated to transforming the complexity of cloud environments into streamlined, user-friendly systems. Our goal is to empower businesses of various scales to manage and secure their cloud infrastructure with ease and efficiency.
+Fix Inventory works for AWS, Microsoft Azure, Google Cloud, DigitalOcean, Hetzner and Kubernetes.
 
+## 🎁 What’s under the hood of Fix Inventory?
 
-### Our Projects 🚀
-- **[Fix](https://fix.security)**: Our Cloud Security Posture Management (CSPM) SaaS offering. Built on Fix Inventory, Fix is designed to help organizations secure their cloud infrastructure efficiently. It comprises of these components:
-  - [`fixfrontend`](https://github.com/someengineering/fixfrontend): The Fix user interface for managing and monitoring your cloud security posture.
-  - [`fixbackend`](https://github.com/someengineering/fixbackend): The backend that powers the Fix platform.
-  - [`fixctl`](https://github.com/someengineering/fixctl): The Fix CLI tool for integrating Fix data into your pipelines.
-  - [`fix-cf`](https://github.com/someengineering/fix-cf): The sources for the AWS CloudFormation stack that Fix deploys.
-  - [`fixcloudutils`](https://github.com/someengineering/fixcloudutils): Various utilities used in Fix.
-- **[Fix Inventory](https://inventory.fix.security)**: Our self-hosted cloud inventory tool, powering our SaaS offering. 🛠️ Fix Inventory is the backbone of Fix SaaS. It comprises of these components:
-  - [`fixinventory`](https://github.com/someengineering/fixinventory):
-    - [`fixcore`](https://github.com/someengineering/fixinventory/tree/main/fixcore): The Fix graph platform core. Receives infrastructure data from the worker(s), runs workflows and infrastructure apps and provides an API.
-    - [`fixworker`](https://github.com/someengineering/fixinventory/tree/main/fixworker): Runs [collector plugins](https://github.com/someengineering/fixinventory/tree/main/plugins) and sends their results to fixcore.
-    - [`fixshell`](https://github.com/someengineering/fixinventory/tree/main/fixshell): CLI to interact with Fix Inventory.
-    - [`fixmetrics`](https://github.com/someengineering/fixinventory/tree/main/fixmetrics): Prometheus metrics exporter for your cloud inventory data.
-  - [`fixcompliance`](https://github.com/someengineering/fixcompliance): Our compliance benchmarks and checks. Used by `fixcore` to find vulnerable cloud resources.
-  - [`fixinventoryclient`](https://github.com/someengineering/fixinventoryclient-python): Python SDK for accessing Fix Inventory. Used by `fixshell`.
-  - [`fixinventory-apps`](https://github.com/someengineering/fixinventory-apps): A collection of Fix Inventory infrastructure apps. Used by `fixcore` to dynamically react to changes in your infrastructure.
-  - [`fixinventoryappbundler`](https://github.com/someengineering/fixinventoryappbundler): A bundler that takes a collection of infrastructure app sources and bundles them into a single json for `fixcore` to consume. Also allows to dry-run apps during development.
-  - [`fixdatalink`](https://github.com/someengineering/fixdatalink): Data Pipelines for Fix Inventory infrastructure data. Used by `fixcore` to export inventory data to PostgreSQL, MySQL/MariaDB, Snowflake, etc.
-- **[Cyber Security List](https://github.com/someengineering/cloud-security-list)**: We maintain a list of cybersecurity-related vendors, platforms, projects, frameworks, newsletters, podcasts and conferences.
+Fix Inventory simplifies keeping your cloud(s) secure and compliant, with three core capabilities: 
 
-### Open Source Commitment 💖
-We believe in the power of open source. All our products are open source, inviting collaboration, innovation, and transparency. Fix Inventory is fully self contained and can be deployed on your laptop or in the cloud. We've invested heavily in its documentation, ensuring it is accessible and user-friendly for everyone. In contrast, Fix frontend and backend are distinctly designed projects. They are open source primarily for auditability and transparency. We actively develop these in the public domain, but they are specifically tailored to support our Fix SaaS system, and we frequently introduce breaking changes. It's also important to note that while Fix frontend is open source, it utilizes commercial Material UI components. As such, to use it, you'd need your own Material UI license.
+1. **Agentless scanning** with our [cloud collector plugins](https://github.com/someengineering/fixinventory/tree/main/plugins) for a complete and and continuous assessment of your cloud(s) without impacting workload performance. 
+2. **Normalization across clouds** with our [unified data model](https://inventory.fix.security/reference/unified-data-model) and abstractions for common cloud resources called ”. Think ‘database’, ‘bucket’ or ‘keypair’.
+3. **Risk analysis** with our query language, full-text search and [pre-configured compliance frameworks](https://github.com/someengineering/fixcompliance) to scan your entire fleet. 
 
+We’ve packaged all capabilities into a CLI and a REST API, so that you can integrate data from Fix Inventory with the rest of your cloud and security operations. We always envisioned Fix Inventory as a platform that others can build on. 
 
-### Join the Conversation 🗣️
-Have questions or want to discuss cloud management and security? Join us on [our Discord](https://discord.gg/someengineering) and be part of our growing community.
+Fix Inventory is self-contained and can be deployed on your laptop or in the cloud. If you’re new to Fix Inventory, then:
 
----
-Stay updated and connect with us on [LinkedIn](https://linkedin.com/company/fix) 📱
+- check out (and ⭐) [the repo](https://github.com/someengineering/fixinventory)
+- read more in our [Docs](https://inventory.fix.security/)
+- head to the [Getting Started](https://inventory.fix.security/getting-started) section
+
+## 👉 Don’t miss “Fix”, our SaaS product!
+
+Fix is our hosted cloud security platform that comes with opinionated dashboards and pre-configured integrations. We’re drinking our own champagne, since Fix is built on top of Fix Inventory. 
+
+It’s best for organizations who do not want to deal with self-hosting open source software, and with users who prefer using dashboards vs. a CLI.
+
+ The genesis of the name “Fix”: When we asked security engineers for their biggest wish, it was to “fix all the things”. 
+
+## 🏎️ Take Fix for a test drive
+
+Experience Fix, our SaaS product, for free with no strings attached! No sales pitch or demo required—it's hands-on from the start. Enhance your security posture in minutes, not months.
+
+- Sign up and use our free tier [here](https://app.fix.security/auth/register)
+- Learn how Fix works with our [Docs](https://docs.fix.security).
+- Book a cloud security assessment [here](https://calendly.com/larskamp/cloud-security-assessment)
+
+## 🧙 Wait, but what is Some Engineering?
+
+Some Engineering was founded in 2021 by engineers who previously worked at Mesosphere, Instana and Crittercism. We come with a background in analytics, observability and site reliability engineering. 
+
+In our work, we noticed how there was always friction between security and infrastructure teams. One team wanted to move fast (infrastructure), but that made it harder for the other team (security) to do their job and stay in control. The friction got worse with a rising number of cloud services and multi-cloud environments. 
+
+We built Fix Inventory to remove that friction, with a tool that infrastructure and security engineers both could use. Our goal is to help engineers move fast and build new infrastructure, without compromising security. 
+
+How did we come up with the name? We joked how solving every hard problem will require “some engineering”, and that’s what stuck.
